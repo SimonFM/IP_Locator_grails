@@ -12,8 +12,8 @@ class GetIPController {
 	
     def index() {
 
-		def ip = request.getRemoteAddr()		
-		render "<br>"+"Test IP (Machine code is running on):"+"<br>"
+	def ip = request.getRemoteAddr()		
+	render "<br>"+"Test IP (Machine code is running on):"+"<br>"
         showLocation(ip)
         render "<br><br>"+"Test IP (www.google.ie):"+"<br>"
         showLocation(testIPGoogleIe)
